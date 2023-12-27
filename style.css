@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    max-width: 500px;
+    width: 400px;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding: 1.5rem;
+    backdrop-filter: blur(6px);
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    flex-direction: column;
+    align-items: center;
+}
+
+.login {
+    width: 100%;
+}
+
+.login h1 {
+    color: #fff;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+.login-form {
+    flex-direction: column;
+    display: flex;
+    gap: 1rem; 
+
+}
+
+.login-form input {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 0.75rem 1rem;
+    color: #fff;
+    outline: none;
+    font-weight: 300;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.login-form input::placeholder {
+    color: #fff;
+}
+
+.login-form input:focus {
+    box-shadow: 0 0 0 3px #28054185;
+    background: transparent;  
+}
+
+.login-form button {
+    background: #fff;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    color: #280541;
+    font-weight: 300;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.login-form button:hover {
+    background: linear-gradient(to right, #5378b6, #280541);
+    color: #fff;
+    transform: scale(0.95);
+}
+
+.login-form .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.login-form .remember-forgot .forgot {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.login-form .remember-forgot .remember {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
